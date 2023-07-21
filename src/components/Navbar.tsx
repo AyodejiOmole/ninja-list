@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const Navbar = () => {
   return (
-    <div className='lg:p-4 px-2 py-4 border-2 border-gray-200 lg:flex align-center justify-between'>
+    <div className='lg:p-4 px-2 py-4 border border-gray-200 lg:flex align-center justify-between'>
       <div className="logo">
         <a>Ninja</a>
       </div>
