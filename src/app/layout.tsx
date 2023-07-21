@@ -21,7 +21,9 @@ export default function RootLayout({
       <body className={inter.className}>
         <Navbar/>
         {children}
-        <Footer/>
+        <div className='mx-auto w-full'>
+          <Footer/>
+        </div>
       </body>
     </html>
   )
