@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "About Ninja",
+    title: "Ninja List | About",
     description: "an about us page for Ninja Listing"
 };
 

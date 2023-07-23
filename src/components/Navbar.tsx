@@ -1,11 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
     <div className='lg:p-4 px-2 py-4 border border-gray-200 lg:flex align-center justify-between'>
       <div className="logo font-mono cursor-pointer text-xl">
-        <a>Ninja</a>
+        {/* <a>Ninja</a> */}
+        <Image src="/logo.png" alt="Ninja Logo" width={50} height={10}/>
       </div>
 
       <div className='flex justify-between align-center'>
