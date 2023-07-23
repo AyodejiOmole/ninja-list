@@ -1,5 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 interface UserType {
   id: number,
@@ -45,8 +46,10 @@ const NinjaListing = async () => {
     <div>
       {data.map((user: UserType, index: number) => {
         return (
-          <div key={index}>
-            <p>{user.website}</p>
+          <div key={user.id}>
+            <Link href={`/ninja-listing/${user.id}`}>
+              <p>{user.name}</p>
+            </Link>
             {/* <p>{user}</p> */}
           </div>
         )
