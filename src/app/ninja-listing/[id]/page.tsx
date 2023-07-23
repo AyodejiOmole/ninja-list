@@ -1,5 +1,4 @@
 import React from 'react';
-import { UserType } from '../page';
 
 // export async function generateStaticParams() {
 //   const res = await fetch('https://jsonplaceholder.typicode.com/users');
