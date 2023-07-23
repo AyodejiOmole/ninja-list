@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-interface UserType {
+export interface UserType {
   id: number,
   name: string,
   username: string,
