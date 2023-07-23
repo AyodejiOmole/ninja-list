@@ -43,17 +43,19 @@ const NinjaListing = async () => {
   }
 
   return (
-    <div>
-      {data.map((user: UserType, index: number) => {
-        return (
-          <div key={user.id}>
-            <Link href={`/ninja-listing/${user.id}`}>
-              <p>{user.name}</p>
+    <div className="w-full mt-10 lg:p-0 p-4">
+      <div className="mx-auto lg:w-4/5 md:4/5 w-full">
+        {data.map((user: UserType, index: number) => {
+          return (
+            <Link href={`/ninja-listing/${user.id}`} key={user.id}>
+              <div className='hover:bg-white group delay-100 hover:border-0 w-full border p-5 mt-2 cursor-pointer flex justify-center border-white duration-300 transition-all'>
+                  <p className="font-mono text-base leading-normal group-hover:text-black text-white">{user.name}</p>
+              </div>
             </Link>
-            {/* <p>{user}</p> */}
-          </div>
-        )
-      })}
+          )
+        })}
+      </div>
+      
     </div>
   )
 }
